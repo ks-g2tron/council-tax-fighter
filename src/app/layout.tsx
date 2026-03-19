@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
       </head>
       <body className="bg-white text-gray-900 antialiased">
         {children}
+        <Script src="https://analytics.buyandscrap.com/script.js" data-website-id="20322df8-4f3c-4e45-94d1-4a74aa184118" strategy="afterInteractive" />
       </body>
     </html>
   );
